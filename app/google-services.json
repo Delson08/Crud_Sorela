@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "716077240312",
+    "project_id": "crud-operations-7608c",
+    "storage_bucket": "crud-operations-7608c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716077240312:android:71687c99b12360df7a500d",
+        "android_client_info": {
+          "package_name": "com.example.crud_sorela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716077240312-ff7eo9pqnhc5pl3fc2eeg31qpmcj600v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARSFfx-LBmQsjkzv1N744nlThvWvTGlKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716077240312-ff7eo9pqnhc5pl3fc2eeg31qpmcj600v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

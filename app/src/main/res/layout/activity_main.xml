@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/stud_Name"
+        android:layout_width="267dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="src_in"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+        android:ems="10"
+        android:hint="Student Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHighlight="#040404"
+        android:textColorHint="#292828"
+        android:textColorLink="#050505"
+        app:layout_constraintBottom_toBottomOf="@+id/stud_Year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
+
+    <EditText
+        android:id="@+id/stud_Course"
+        android:layout_width="269dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="src_in"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+        android:ems="10"
+        android:hint="Course"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#292828"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stud_Name"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/stud_Year"
+        android:layout_width="268dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="src_in"
+        android:digits="0123456789 "
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="textCapWords"
+        android:textColorHint="#292828"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <EditText
+        android:id="@+id/stud_ID"
+        android:layout_width="267dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="src_in"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="Student ID"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#050505"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/stud_Year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <Button
+        android:id="@+id/cmdRetrive"
+        android:layout_width="119dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#000000"
+        android:text="Retrieve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
+    <Button
+        android:id="@+id/cmdUpdate"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000000"
+        android:text="UPDATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/cmdRetrive"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
+    <Button
+        android:id="@+id/cmdCreate"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000000"
+        android:text="Create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
+    <Button
+        android:id="@+id/cmdDelete"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000000"
+        android:text="DELETE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmdRetrive"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="204dp"
+        android:layout_height="195dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054"
+        app:srcCompat="@drawable/person_avatar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
