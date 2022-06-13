@@ -68,18 +68,16 @@ public class Registration extends AppCompatActivity {
             {
                 if (task.isSuccessful())
                 {
-                    Toast.makeText(getApplicationContext(), "Registration failed!!" + " Please try again later", Toast.LENGTH_LONG).show();
-                    progressbar.setVisibility(View.GONE);
-                }
-                else
-                {
-
-
                     Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_LONG).show();
                     progressbar.setVisibility(View.GONE);
 
                     Intent intent = new Intent(Registration.this, Login.class);
                     startActivity(intent);
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "Registration failed!!" + " Please try again later", Toast.LENGTH_LONG).show();
+                    progressbar.setVisibility(View.GONE);
                 }
             }
         });

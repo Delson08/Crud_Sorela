@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int GalleryPick = 1;
     private String productRandomKey, downloadImageUrl;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef= database.getReference("Products");
+    DatabaseReference myRef= database.getReference("Students");
     private ImageView InputProductImage;
     ImageView imgview;
     private String CategoryName;

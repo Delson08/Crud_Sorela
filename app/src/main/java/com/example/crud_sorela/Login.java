@@ -80,17 +80,17 @@ public class Login extends AppCompatActivity {
             {
                 if (task.isSuccessful())
                 {
-                    Toast.makeText(getApplicationContext(), "Login failed!!", Toast.LENGTH_LONG).show();
-                    progressbar.setVisibility(View.GONE);
-                }
-                else
-                {
-
-
                     Toast.makeText(getApplicationContext(), "Login successful!!", Toast.LENGTH_LONG).show();
                     progressbar.setVisibility(View.GONE);
 
                     Intent intent = new Intent(Login.this, MainActivity.class);startActivity(intent);
+
+
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "Login failed!!", Toast.LENGTH_LONG).show();
+                    progressbar.setVisibility(View.GONE);
                 }
             }
         });
